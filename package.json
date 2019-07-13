@@ -1,0 +1,21 @@
+{
+  "name": "nuxt-portfolio",
+  "version": "1.0.0",
+  "description": "A refactoring of my online portfolio",
+  "author": "varangian111",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/pwa": "^2.6.0",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^1.0.0",
+    "nodemon": "^1.18.9"
+  }
+}
