@@ -1,8 +1,9 @@
 <template>
-	<div class="navbar">
-		<nuxt-link to="/" class="hover:text-pink-600 navbarButton">Home</nuxt-link>
-		<nuxt-link to="/bio" class="hover:text-pink-600 navbarButton">Bio</nuxt-link>
-		<nuxt-link to="/projects" class="hover:text-pink-600 navbarButton">Projects</nuxt-link>
+	<div class="">
+		<h1 class="navheader">Ryan Rowe</h1>
+		<nuxt-link class="hover:text-pink-600 block" to="/">Home</nuxt-link>
+		<nuxt-link class="hover:text-pink-600 block" to="/bio">Bio</nuxt-link>
+		<nuxt-link class="hover:text-pink-600 block" to="/projects">Projects</nuxt-link>
 	</div>
 </template>
 
