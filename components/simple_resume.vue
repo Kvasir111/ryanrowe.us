@@ -1,13 +1,23 @@
 <template>
 	<div>
 	<div id="basic-information" class="text-center text-white">
-		<h1 class="text-2xl">{{name}}</h1>
-		<h2 class="text-xl">{{myTitle}}</h2>
+		<h1 class="text-2xl permanantMarker">{{name}}</h1>
+		<h2 class="text-xl permanantMarker">{{myTitle}}</h2>
 	</div>
-		<div id="job-experience" class="text-white text-center">
-			<h1> &lt;h1&gt;Job Experience&lt;/h1&gt; </h1>
-			<ul>
-				<li :key="index" v-bind:value="jobs.year" v-for="(jobs, index) in jobs"> {{jobs.job}}</li>
+		<div class="text-white mx-auto mt-2" id="job-experience">
+			<h1 class="text-center border-b-2 w-1/4 mx-auto"> Job Experience </h1>
+			<ul class="mx-auto w-1/4 text-center">
+				<li :key="index" class="text-left job-text" v-bind:value="jobs.years" v-for="(jobs, index) in jobs"><u>{{jobs.years}}</u>
+					<br> {{jobs.company}} {{jobs.job}}
+				</li>
+			</ul>
+		</div>
+		<div class="text-white mx-auto mt-2" id="education">
+			<h1 class="text-center border-b-2 w-1/4 mx-auto">Education</h1>
+			<ul class="mx-auto w-1/4 text-center">
+				<li :key="index" :value="education.institution" v-for="(education , index) in education">
+					{{education.institution}} <br>{{education.degree}}
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -19,7 +29,7 @@
 		data: function () {
 			return{
 				name : "Ryan Rowe",
-				myTitle: "Combat Engineer | Powerlifter | Developer",
+				myTitle: "Developer | Combat Engineer | Powerlifter",
 				jobs:[
 					{years: "2012-2014" , company: "Best Buy" ,job: "PC Sales Consultant"},
 					{years: "2014-2016" , company: "Geek Squad", job: "Advanced Repair Agent"},

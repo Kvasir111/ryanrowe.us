@@ -1,15 +1,25 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
 @font-face {
 	font-family: Doctor-Glitch;
 	font-face-name: Doctor-Glitch;
 	src: local("/assets/fonts/doctor_glitch.otf");
 	font-display: auto;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .navheader {
-	font-family: Doctor-Glitch;
+	font-family: 'Permanent Marker', cursive;
 	@apply font-bold text-2xl;
 	color: #979C94;
+}
+
+.permanantMarker {
+	font-family: 'Permanent Marker', cursive;
+}
+
+.job-text {
+	text-shadow: 2px 2px #D81B60;
 }
