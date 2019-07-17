@@ -26,5 +26,5 @@
 }
 
 .resume-heading {
-	@apply text-center border-b-2 w-1 / 4 mx-auto
+	@apply text-center border-b-2 w-1/4 mx-auto
 }
