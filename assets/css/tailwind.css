@@ -16,10 +16,15 @@
 	color: #979C94;
 }
 
-.permanantMarker {
+.permanentMarker {
 	font-family: 'Permanent Marker', cursive;
 }
 
 .job-text {
+	@apply text-left;
 	text-shadow: 2px 2px #D81B60;
+}
+
+.resume-heading {
+	@apply text-center border-b-2 w-1 / 4 mx-auto
 }
