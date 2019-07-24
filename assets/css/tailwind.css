@@ -10,7 +10,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.navheader {
+.nav-header {
 	font-family: 'Permanent Marker', cursive;
 	@apply font-bold text-2xl;
 	color: #979C94;
@@ -27,4 +27,13 @@
 
 .resume-heading {
 	@apply text-center border-b-2 w-1/4 mx-auto
+}
+.rounded-outline{
+	border-color: #c3073f;
+	border-style: solid;
+	border-width: 2px;
+}
+.project-description{
+	color: #4e4e50;
+	@apply text-center
 }
