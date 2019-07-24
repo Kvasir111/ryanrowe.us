@@ -1,8 +1,8 @@
 <template>
 	<div>
 		<div class="text-center text-white" id="basic-information">
-			<h1 class="text-2xl permanentMarker">{{name}}</h1>
-			<h2 class="text-xl permanentMarker">{{myTitle}}</h2>
+
+			<h2 class="text-xl universal-ignorance">{{myTitle}}</h2>
 		</div>
 		<div class="text-white mx-auto mt-2" id="job-experience">
 			<h1 class="resume-heading"> Job Experience </h1>
@@ -36,8 +36,8 @@
 		name: "simple_resume",
 		data: function () {
 			return {
-				name: "Ryan Rowe",
-				myTitle: "Developer | Combat Engineer | Powerlifter",
+				name: "RYAN ROWE",
+				myTitle: "DEVELOPER \\ ENGINEER \\ POWERLIFTER",
 				jobs: [
 					{years: "2012-2014", company: "Best Buy", job: "PC Sales Consultant"},
 					{years: "2014-2016", company: "Geek Squad", job: "Advanced Repair Agent"},

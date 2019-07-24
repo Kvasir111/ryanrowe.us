@@ -1,23 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
 
 @font-face {
-	font-family: Doctor-Glitch;
-	font-face-name: Doctor-Glitch;
-	src: local("/assets/fonts/doctor_glitch.otf");
-	font-display: auto;
+	font-family: 'Universal Ignorance';
+	font-face-name:"universal-ignorance";
+	src: url("~assets/css/fonts/universal-ignorance.ttf")format('truetype');
+}
+@font-face {
+	font-family: 'Paradox';
+	font-face-name:"paradox";
+	src: url("~assets/css/fonts/paradox.ttf")format('truetype');
 }
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .nav-header {
-	font-family: 'Permanent Marker', cursive;
-	@apply font-bold text-2xl;
-	color: #979C94;
-}
-
-.permanentMarker {
-	font-family: 'Permanent Marker', cursive;
+	font-family: 'Universal Ignorance', sans-serif;
+	@apply font-bold text-2xl text-white;
 }
 
 .job-text {
@@ -33,7 +32,33 @@
 	border-style: solid;
 	border-width: 2px;
 }
+.universal-ignorance{
+	font-family: "Universal Ignorance", sans-serif;
+}
+.paradox{
+	font-family: "Paradox",sans-serif ;
+}
+.project-box{
+	@apply text-left rounded-outline rounded-full w-1/3 mx-auto p-2
+}
+.project-title{
+	@apply text-xl text-center text-white font-bold
+}
 .project-description{
-	color: #4e4e50;
-	@apply text-center
+	@apply text-center text-white font-light
+}
+.nav-link{
+	@apply universal-ignorance block text-white
+}
+.zoom{
+	transition: transform .2s;
+}
+.zoom:hover{
+	transform: scale(1.2);
+}
+.hover-score{
+	transition: .1s;
+}
+.hover-score:hover{
+	@apply border-b-2
 }

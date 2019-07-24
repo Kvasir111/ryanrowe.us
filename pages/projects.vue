@@ -1,7 +1,7 @@
 <template>
 	<div id="github" v-on:load="getGit" class="">
-		<h1 class="text-center text-2xl text-white">Github Repos</h1>
-		<ul id="github-links" class="mx-auto text-center"></ul>
+		<h1 class="text-center text-2xl text-white paradox">GITHUB REPOS</h1>
+		<ul id="github-links" class="mx-auto text-center "></ul>
 	</div>
 </template>
 
@@ -33,9 +33,9 @@
 							}
 							console.log(repoName);
 							$("#github-links").append(
-								'<li class="text-left rounded-outline rounded-full w-1/3 mx-auto">' +
+								'<li class="project-box hover:bg-nuPinkLight zoom">' +
 								'<a target="_blank" href="'+url+'" rel="noreferrer" class="">' +
-								'<h3 class="text-xl text-center text-white font-bold">' +
+								'<h3 class="project-title">' +
 								repoName +
 								'</h3>' +
 									'<p class="project-description">' + description + '</p>'+
