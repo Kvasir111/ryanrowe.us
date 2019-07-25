@@ -4,7 +4,7 @@
 		<nuxt-link class="hover:text-nuPinkLight nav-link hover-score" to="/">HOME</nuxt-link>
 		<nuxt-link class="hover:text-nuPinkLight nav-link hover-score" to="/bio">BIO</nuxt-link>
 		<nuxt-link class="hover:text-nuPinkLight nav-link hover-score" to="/projects">PROJECTS</nuxt-link>
-		<nuxt-link class="hover:text-nuPinkLight nav-link hover-score" to="/projects">RESUME</nuxt-link>
+		<nuxt-link class="hover:text-nuPinkLight nav-link hover-score" to="/resume">RESUME</nuxt-link>
 	</div>
 </template>
 
