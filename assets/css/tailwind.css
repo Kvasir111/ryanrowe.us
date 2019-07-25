@@ -3,12 +3,12 @@
 @font-face {
 	font-family: 'Universal Ignorance';
 	font-face-name:"universal-ignorance";
-	src: url("~assets/css/fonts/universal-ignorance.ttf")format('truetype');
+	src: url("~static/fonts/universal-ignorance.ttf")format('truetype');
 }
 @font-face {
 	font-family: 'Paradox';
 	font-face-name:"paradox";
-	src: url("~assets/css/fonts/paradox.ttf")format('truetype');
+	src: url("~static/fonts/paradox.ttf")format('truetype');
 }
 @tailwind base;
 @tailwind components;
