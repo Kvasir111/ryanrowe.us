@@ -33,7 +33,7 @@
 							}
 							console.log(repoName);
 							$("#github-links").append(
-								'<li class="project-box hover:bg-nuPinkLight zoom">' +
+								'<li class="project-box sm:w-2/5 hover:bg-nuPinkLight zoom">' +
 								'<a target="_blank" href="'+url+'" rel="noreferrer" class="">' +
 								'<h3 class="project-title">' +
 								repoName +

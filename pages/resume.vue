@@ -1,5 +1,7 @@
 <template>
+	<div>
 	<simple_resume></simple_resume>
+	</div>
 </template>
 
 <script>
