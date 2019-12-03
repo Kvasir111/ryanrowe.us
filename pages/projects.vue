@@ -14,9 +14,8 @@
 		},
 		methods:{
 			getGit(){
-				console.log("KEK");
 				$.ajax({
-					url: "https://api.github.com/users/varangian111/repos",
+					url: "https://api.github.com/users/Kvasir111/repos",
 					jsonp: true,
 					method: "GET",
 					dataType: "json",
