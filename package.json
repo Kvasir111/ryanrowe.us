@@ -1,24 +1,34 @@
 {
- "name": "nuxt-portfolio",
- "version": "1.0.0",
- "description": "A refactoring of my online portfolio",
- "author": "varangian111",
- "private": true,
- "scripts": {
-  "dev": "nuxt",
-  "build": "nuxt build",
-  "start": "nuxt start",
-  "generate": "nuxt generate"
- },
- "dependencies": {
-  "@nuxtjs/pwa": "^2.6.0",
-  "gsap": "^2.1.3",
-  "jquery": "^3.4.1",
-  "nuxt": "^2.10.2"
- },
- "devDependencies": {
-  "mini-css-extract-plugin": "^0.8.0",
-  "nodemon": "^1.19.4",
-  "tailwindcss": "^1.1.4"
- }
+  "name": "ryanrowe.us",
+  "version": "1.5.0",
+  "description": "A refactoring of my online portfolio",
+  "author": "Ryan Rowe",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/pwa": "^2.6.0",
+    "gsap": "^2.1.3",
+    "jquery": "^3.4.1",
+    "nuxt": "^2.10.2"
+  },
+  "devDependencies": {
+    "mini-css-extract-plugin": "^0.8.0",
+    "nodemon": "^1.19.4",
+    "tailwindcss": "^1.1.4"
+  },
+  "main": "nuxt.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kvasir111/ryanrowe.us.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kvasir111/ryanrowe.us/issues"
+  },
+  "homepage": "https://github.com/Kvasir111/ryanrowe.us#readme"
 }
