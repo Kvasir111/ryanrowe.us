@@ -12,4 +12,7 @@
 </script>
 
 <style scoped>
+	body{
+		background-image: url("https://photos.google.com/photo/AF1QipNxnkTe4QZ1r30UQz7JOfxjVESu0eAnIO-7MyhE");
+	}
 </style>
