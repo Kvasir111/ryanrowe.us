@@ -1,52 +1,51 @@
 <template>
-	<div id="github" v-on:load="getGit" class="">
-		<h1 class="text-center text-2xl text-white paradox">GITHUB REPOS</h1>
-		<ul id="github-links" class="mx-auto text-center "></ul>
+	<div id="github">
+		<h1 class="text-xl text-center text-white">Github Repos</h1>
+		<ul class="mx-auto text-center">
+			<repo-node :key=index v-for="(link, index) in gitLinks"
+			           v-bind:repo-name="gitLinks[index].repoName"
+			           v-bind:repo-link="gitLinks[index].repoLink"
+						v-bind:repo-lang="gitLinks[index].repoLang"
+			           v-bind:repo-description="gitLinks[index].repoDescription"
+			/>
+		</ul>
+
 	</div>
 </template>
 
 <script>
 	import $ from 'jquery';
+	import axios from 'axios';
+	import RepoNode from "../components/repoNode";
 	export default {
 		name: "projects",
-		mounted : function (){
-			this.getGit();
-		},
-		methods:{
-			getGit(){
-				console.log("KEK");
-				$.ajax({
-					url: "https://api.github.com/users/varangian111/repos",
-					jsonp: true,
-					method: "GET",
-					dataType: "json",
-					success: function(repos) {
-						let repoList = Object.keys(repos).length;
-						for (let i = 0 ; i < repoList ; i++){
+		components: {RepoNode},
+		data : function(){
+			return{
+				gitLinks: [],
 
-							let repoName = repos[i].name;
-							let description = repos[i].description;
-							let url = repos[i].html_url;
-
-							if (description === null){
-								description = "No Description Provided"
-							}
-							console.log(repoName);
-							$("#github-links").append(
-								'<li class="project-box sm:w-2/5 hover:bg-nuPinkLight zoom">' +
-								'<a target="_blank" href="'+url+'" rel="noreferrer" class="">' +
-								'<h3 class="project-title">' +
-								repoName +
-								'</h3>' +
-									'<p class="project-description">' + description + '</p>'+
-								'</a>' +
-							    '</li>' +
-								'<br>'
-							);
-						}
-					}
-				});
 			}
+		},
+		mounted : function (){
+			axios.get("https://api.github.com/users/Kvasir111/repos").then(response =>
+				{
+					for (let index in response.data){
+						console.log(response.data[index].name);
+						console.log(response.data[index].html_url)
+						this.gitLinks.push(
+							{
+								repoName : response.data[index].name,
+								repoLink : response.data[index].html_url,
+								repoLang : response.data[index].language,
+								repoDescription: response.data[index].description
+							}
+						)
+					}
+				}
+			);
+		},
+		methods :{
+
 		}
 	}
 </script>

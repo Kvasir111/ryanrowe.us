@@ -11,6 +11,7 @@ module.exports = {
 				nuPinkDark: '#6f2232',
 				nuPink: '#950740',
 				nuPinkLight: '#c3073f'
+
 			},
 		}
 	},
