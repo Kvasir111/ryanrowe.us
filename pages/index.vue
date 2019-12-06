@@ -1,5 +1,8 @@
 <template>
-	<div id="main" v-bind:style="{ 'background-image': 'url(~assets/sadman.jpg)'}" class="parallax">
+	<div class="bg-nugray h-full ">
+		<div id="main" v-bind:style="cssProps" class="parallax">
+
+		</div>
 	</div>
 </template>
 
@@ -10,12 +13,12 @@
 		},
 		data: function () {
 			return{
-				image: ''
+				cssProps : {
+					backgroundImage : `url(${require('~assets/sadman.jpg')})`
+				}
 			}
 		},
 		mounted() {
-			this.image =
-			console.log()
 		}
 	}
 </script>
