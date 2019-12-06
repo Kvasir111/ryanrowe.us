@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div style="z-index: 1">
 		<div id="top">
 			<span class="" v-on:click="openNav">
 				<right-arrow />
@@ -30,11 +30,10 @@
 		methods :{
 			openNav(){
 				document.getElementById("sideNavigation").style.width = "250px";
-				document.getElementById("app").style.marginLeft = "250px";
 			},
 			closeNav(){
 				document.getElementById("sideNavigation").style.width = "0";
-				document.getElementById("app").style.marginLeft = "0";
+
 			}
 		}
 	}
