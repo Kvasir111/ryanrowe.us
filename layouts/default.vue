@@ -1,7 +1,7 @@
 <template>
 	<div style="z-index: 1">
 		<div id="top">
-			<span class="" v-on:click="openNav">
+			<span id="openButton" v-on:click="openNav">
 				<right-arrow />
 			</span>
 			<div class="navMenu inline-block h-screen" id="sideNavigation">
@@ -30,10 +30,11 @@
 		methods :{
 			openNav(){
 				document.getElementById("sideNavigation").style.width = "250px";
+				document.getElementById("openButton").style.display = "none";
 			},
 			closeNav(){
 				document.getElementById("sideNavigation").style.width = "0";
-
+				document.getElementById("openButton").style.display = "inline"
 			}
 		}
 	}
@@ -53,7 +54,6 @@
 		-moz-osx-font-smoothing: grayscale;
 		-webkit-font-smoothing: antialiased;
 		box-sizing: border-box;
-		background-color: #1a1a1d;
 	}
 	.navMenu {
 		height: 100%; /* 100% Full-height */
