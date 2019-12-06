@@ -5,12 +5,12 @@
 				<right-arrow />
 			</span>
 			<div class="navMenu inline-block h-screen" id="sideNavigation">
-				<span v-on:click="closeNav" ><left-arrow class="closebtn"/></span>
+				<span v-on:click="closeNav"><left-arrow class="closebtn"/></span>
 				<ul>
-				<li><nuxt-link class="navButton text-white hover:bg-gray-300 hover:text-black" to="/">HOME</nuxt-link></li>
-				<li><nuxt-link class="navButton text-white hover:bg-gray-300 hover:text-black" to="/bio">BIO</nuxt-link></li>
-					<li><nuxt-link class="navButton text-white hover:bg-gray-300 hover:text-black" to="/projects">PROJECTS</nuxt-link></li>
-				<li><nuxt-link class="navButton text-white hover:bg-gray-300 hover:text-black" to="/resume">RESUME</nuxt-link></li>
+					<li v-on:click="closeNav"><nuxt-link class="navButton text-white hover:bg-gray-300 hover:text-black" to="/">HOME</nuxt-link></li>
+					<li v-on:click="closeNav"><nuxt-link class="navButton text-white hover:bg-gray-300 hover:text-black" to="/bio">BIO</nuxt-link></li>
+					<li v-on:click="closeNav"><nuxt-link class="navButton text-white hover:bg-gray-300 hover:text-black" to="/projects">PROJECTS</nuxt-link></li>
+					<li v-on:click="closeNav"><nuxt-link class="navButton text-white hover:bg-gray-300 hover:text-black" to="/resume">RESUME</nuxt-link></li>
 				</ul>
 			</div>
 		</div>
@@ -64,6 +64,7 @@
 		top: 0; /* Stay at the top */
 		left: 0;
 		background-color: #111; /* Black*/
+		opacity: 0.8;
 		overflow-x: hidden; /* Disable horizontal scroll */
 		padding-top: 60px; /* Place content 60px from the top */
 		transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
