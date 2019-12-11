@@ -1,6 +1,6 @@
 <template>
-	<div>
-	<img  alt="bg" class="bg-scroll" src="~static/images/sadman.jpg">
+	<div class="h-screen overflow-hidden justify-center w-full">
+	<img  alt="bg" class="" src="~static/images/sadman.jpg">
 	</div>
 </template>
 
@@ -14,6 +14,9 @@
 			}
 		},
 		mounted() {
+		},
+		created() {
+
 		}
 	}
 </script>

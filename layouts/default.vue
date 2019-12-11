@@ -5,7 +5,7 @@
 				<right-arrow class="top"/>
 			</span>
 			<div class="navMenu inline-block h-screen" id="sideNavigation">
-				<span v-on:click="closeNav"><left-arrow class="closebtn"/></span>
+				<span v-on:click="closeNav"><left-arrow class="closeButton"/></span>
 				<ul>
 					<li v-on:click="closeNav"><nuxt-link class="navButton text-white hover:bg-gray-300 hover:text-black" to="/">HOME</nuxt-link></li>
 					<li v-on:click="closeNav"><nuxt-link class="navButton text-white hover:bg-gray-300 hover:text-black" to="/bio">BIO</nuxt-link></li>
@@ -45,7 +45,7 @@
 		position: fixed;
 	}
 	html {
-		@apply bg-gray-900;
+		background: #0f0f0f;
 		font-size: 16px;
 		word-spacing: 1px;
 		-ms-text-size-adjust: 100%;
@@ -70,7 +70,7 @@
 	.navButton{
 		@apply block p-2
 	}
-	.navMenu .closebtn {
+	.navMenu .closeButton {
 		position: absolute;
 		top: 0;
 		right: 25px;
