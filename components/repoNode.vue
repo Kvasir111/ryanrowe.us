@@ -40,7 +40,7 @@
 		@apply text-center text-white font-light
 	}
 	.rounded-outline{
-		border-color: #c3073f;
+		border-color: #b71c1c;
 		border-style: solid;
 		border-width: 2px;
 	}

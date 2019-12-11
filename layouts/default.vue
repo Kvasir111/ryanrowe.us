@@ -1,11 +1,11 @@
 <template>
-	<div style="z-index: 1">
-		<div id="top">
-			<span class="" v-on:click="openNav">
-				<right-arrow />
-			</span>
+	<div class="">
+		<div class="">
+			<button class="top" id="openButton" v-on:click="openNav">
+				<right-arrow class="top"/>
+			</button>
 			<div class="navMenu inline-block h-screen" id="sideNavigation">
-				<span v-on:click="closeNav"><left-arrow class="closebtn"/></span>
+				<span v-on:click="closeNav"><left-arrow class="closeButton"/></span>
 				<ul>
 					<li v-on:click="closeNav"><nuxt-link class="navButton text-white hover:bg-gray-300 hover:text-black" to="/">HOME</nuxt-link></li>
 					<li v-on:click="closeNav"><nuxt-link class="navButton text-white hover:bg-gray-300 hover:text-black" to="/bio">BIO</nuxt-link></li>
@@ -30,10 +30,11 @@
 		methods :{
 			openNav(){
 				document.getElementById("sideNavigation").style.width = "250px";
+				document.getElementById("openButton").style.display = "none";
 			},
 			closeNav(){
 				document.getElementById("sideNavigation").style.width = "0";
-
+				document.getElementById("openButton").style.display = "inline"
 			}
 		}
 	}
@@ -41,11 +42,10 @@
 <style>
 	.top{
 		z-index: 1;
-	}
-	.app{
-		z-index: -1;
+		position: fixed;
 	}
 	html {
+		background: #0f0f0f;
 		font-size: 16px;
 		word-spacing: 1px;
 		-ms-text-size-adjust: 100%;
@@ -53,7 +53,6 @@
 		-moz-osx-font-smoothing: grayscale;
 		-webkit-font-smoothing: antialiased;
 		box-sizing: border-box;
-		background-color: #1a1a1d;
 	}
 	.navMenu {
 		height: 100%; /* 100% Full-height */
@@ -71,7 +70,7 @@
 	.navButton{
 		@apply block p-2
 	}
-	.navMenu .closebtn {
+	.navMenu .closeButton {
 		position: absolute;
 		top: 0;
 		right: 25px;
