@@ -1,6 +1,6 @@
 <template>
-	<div class="h-screen overflow-hidden justify-center w-full">
-	<img  alt="bg" class="" src="~static/images/sadman.jpg">
+	<div class="md:fullscreen">
+	<img  alt="bg" class="h-screen w-screen overflow-hidden justify-center lg:h-auto" src="~static/images/sadman.jpg">
 	</div>
 </template>
 
@@ -22,12 +22,10 @@
 </script>
 
 <style scoped>
-	.parallax{
-		height: 100%;
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
+	@responsive {
+		.fullscreen {
+			@apply h-screen overflow-hidden justify-center w-full
+		}
 	}
 	html{
 		height: 100%;

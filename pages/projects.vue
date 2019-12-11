@@ -31,7 +31,7 @@
 				{
 					for (let index in response.data){
 						console.log(response.data[index].name);
-						console.log(response.data[index].html_url)
+						console.log(response.data[index].html_url);
 						this.gitLinks.push(
 							{
 								repoName : response.data[index].name,
