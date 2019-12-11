@@ -1,8 +1,8 @@
 <template>
-	<div style="z-index: 1">
-		<div id="top">
-			<span id="openButton" v-on:click="openNav">
-				<right-arrow />
+	<div class="">
+		<div class="">
+			<span class="top" id="openButton" v-on:click="openNav">
+				<right-arrow class="top"/>
 			</span>
 			<div class="navMenu inline-block h-screen" id="sideNavigation">
 				<span v-on:click="closeNav"><left-arrow class="closebtn"/></span>
@@ -42,9 +42,7 @@
 <style>
 	.top{
 		z-index: 1;
-	}
-	.app{
-		z-index: -1;
+		position: fixed;
 	}
 	html {
 		@apply bg-gray-900;
