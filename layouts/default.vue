@@ -47,6 +47,7 @@
 		z-index: -1;
 	}
 	html {
+		@apply bg-gray-900;
 		font-size: 16px;
 		word-spacing: 1px;
 		-ms-text-size-adjust: 100%;

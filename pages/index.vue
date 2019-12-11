@@ -1,8 +1,6 @@
 <template>
-	<div class="bg-nugray h-full ">
-		<div id="main" v-bind:style="cssProps" class="parallax">
-
-		</div>
+	<div>
+	<img  alt="bg" class="bg-scroll" src="~static/images/sadman.jpg">
 	</div>
 </template>
 
@@ -13,9 +11,6 @@
 		},
 		data: function () {
 			return{
-				cssProps : {
-					backgroundImage : `url(${require('~assets/sadman.jpg')})`
-				}
 			}
 		},
 		mounted() {
