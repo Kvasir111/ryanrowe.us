@@ -24,7 +24,7 @@
 		components: {LeftArrow, RightArrow},
 		data: function () {
 			return {
-				pages: ['Bio', 'Resume', 'Projects'],
+				pages: ['Bio', 'Resume', 'Projects', 'Contact'],
 
 			}
 		},
