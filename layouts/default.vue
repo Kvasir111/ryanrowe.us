@@ -1,11 +1,13 @@
 <template>
 	<div class="">
-		<div class="">
+		<div>
+			<label for="openButton" class="hidden">Open Navigation Menu</label>
 			<button class="top" id="openButton" v-on:click="openNav">
 				<right-arrow class="top"/>
 			</button>
 			<div class="navMenu inline-block h-screen" id="sideNavigation">
-				<span v-on:click="closeNav"><left-arrow class="closeButton"/></span>
+				<label for="closeButton" class="hidden"></label>
+				<button v-on:click="closeNav" id="closeButton"><left-arrow class="closeButton"/></button>
 				<ul>
 					<li v-on:click="closeNav"><nuxt-link class="navButton text-white hover:bg-gray-300 hover:text-black" to="/">HOME</nuxt-link></li>
 					<li v-on:click="closeNav"><nuxt-link class="navButton text-white hover:bg-gray-300 hover:text-black" to="/bio">BIO</nuxt-link></li>
