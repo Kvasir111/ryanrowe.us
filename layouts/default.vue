@@ -1,9 +1,9 @@
 <template>
 	<div class="">
 		<div class="">
-			<span class="top" id="openButton" v-on:click="openNav">
+			<button class="top" id="openButton" v-on:click="openNav">
 				<right-arrow class="top"/>
-			</span>
+			</button>
 			<div class="navMenu inline-block h-screen" id="sideNavigation">
 				<span v-on:click="closeNav"><left-arrow class="closeButton"/></span>
 				<ul>
