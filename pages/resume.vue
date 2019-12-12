@@ -1,9 +1,6 @@
 <template>
 	<div class="h-screen flex">
 	<simple_resume class="m-auto"></simple_resume>
-		<div class="block">
-
-		</div>
 	</div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div class="project-box md:w-1/3 m-2 sm:zoom">
+		<div class="project-box m-2 sm:zoom">
 		<a v-bind:href="repoLink">
 			<h1 class="project-title">{{repoName}}</h1>
 			<h2 class="project-description italic">{{repoLang}}</h2>
