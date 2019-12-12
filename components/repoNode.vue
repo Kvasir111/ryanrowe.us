@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div class="project-box md: w-1/3 m-2 zoom">
+		<div class="project-box m-2 sm:zoom">
 		<a v-bind:href="repoLink">
 			<h1 class="project-title">{{repoName}}</h1>
 			<h2 class="project-description italic">{{repoLang}}</h2>
@@ -44,11 +44,15 @@
 		border-style: solid;
 		border-width: 2px;
 	}
-	.hoverZoom{
-		transition: .2s;
-	}
-	.zoom:hover{
-		transform: scale(1.2);
+	@responsive {
+		.zoom {
+			transition: .2s;
+		}
+
+		.zoom:hover {
+			background: #b71c1c;
+			transform: scale(1.2);
+		}
 	}
 
 </style>

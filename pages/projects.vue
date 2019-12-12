@@ -1,6 +1,7 @@
 <template>
-	<div id="github">
-		<h1 class="text-xl text-center text-white">Github Repos</h1>
+	<div class="h-screen flex">
+	<div class="m-auto " id="github">
+		<h1 class="text-2xl border-b-2 w-1/3 mb-4 text-center mx-auto border-b-white text-center text-white">Github Repos</h1>
 		<ul class="mx-auto text-center">
 			<repo-node :key=index v-for="(link, index) in gitLinks"
 			           v-bind:repo-name="gitLinks[index].repoName"
@@ -10,6 +11,7 @@
 			/>
 		</ul>
 
+	</div>
 	</div>
 </template>
 
