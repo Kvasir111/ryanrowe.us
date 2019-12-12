@@ -1,6 +1,6 @@
 <template>
-	<div class="">
-		<div class="text-white mx-auto text-center sm:w-2/3 md:1/3 p-2" id="about_me">
+	<div class="h-screen flex">
+		<div class="text-white m-auto text-center sm:w-2/3 md:1/3 p-2" id="about_me">
 			<h1 class="text-center text-2xl">Who am I?</h1>
 			<p class="text-left">
 				Hey there! My name is Ryan. I'm a part time programmer, quarter time web developer, part time engineer and full time weirdo.
