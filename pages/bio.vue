@@ -1,10 +1,14 @@
 <template>
 	<div class="h-screen flex">
 		<div class="text-white m-auto text-center sm:w-2/3 md:1/3 p-2" id="about_me">
+			<div class="object-container mx-auto">
+				<img class="" src="~static/images/myFace.jpeg">
+			</div>
 			<h1 class="text-center text-2xl">Who am I?</h1>
 			<p class="text-left">
 				Hey there! My name is Ryan. I'm a part time programmer, quarter time web developer, part time engineer and full time weirdo.
 			</p>
+			<br>
 			<p class="text-left">
 				I started my education in network administration. Learning the ins and outs of how enterprise networks function and mange their resources as well as their people.
 				I learned how to use basic server software as well as enterprise networking appliances such as Cisco Routers, Switches and Firewalls. As well as fundamental data security and forensics.
@@ -27,5 +31,9 @@
 </script>
 
 <style scoped>
+	.object-container{
+		@apply object-cover overflow-hidden rounded h-40 w-40 flex items-center justify-center object-bottom;
+		background: #b71c1c;
+	}
 
 </style>

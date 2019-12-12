@@ -1,6 +1,5 @@
 <template>
-	<div class="h-screen flex">
-	<div class="w-full sm:w-1/3 m-auto">
+	<div class="">
 		<div class="text-center text-white" id="basic-information">
 			<h2 class="text-xl universal-ignorance">{{myTitle}}</h2>
 		</div>
@@ -29,7 +28,9 @@
 				</li>
 			</ul>
 		</div>
-	</div>
+		<div class="mx-auto text-center">
+		<nuxt-link class="button" to="/bio">Click here to see my bio</nuxt-link>
+		</div>
 	</div>
 </template>
 
@@ -75,6 +76,10 @@
 		}
 		.centered-job-text{
 			@apply text-center;
+		}
+		.button{
+			@apply text-white inline-block mt-4 text-center mx-auto px-4 py-2 rounded;
+			background-color: #b71c1c;
 		}
 	}
 
