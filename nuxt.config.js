@@ -1,3 +1,7 @@
+import webpack from 'webpack';
+import PurgecssPlugin from 'purgecss-webpack-plugin'
+import glob from 'glob-all'
+import path from 'path'
 
 export default {
 	mode: 'universal',
@@ -35,20 +39,26 @@ export default {
 	*/
 	modules: [
 		'@nuxtjs/pwa',
+		'nuxt-purgecss',
+		'@bazzite/nuxt-optimized-images',
 	],
+	optimizedImages: {
+		optimizeImages: true
+	},
 	/*
 	** Build configuration
 	*/
 	build: {
 		postcss: {
 			plugins: {
-				tailwindcss: './tailwind.config.js'
+				tailwindcss: './tailwind.config.js',
 			}
 		},
 		/*
 		** You can extend webpack config here
 		*/
 		extend(config, ctx) {
+
 		}
 	}
 }
