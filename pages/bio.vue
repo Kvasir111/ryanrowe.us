@@ -2,7 +2,7 @@
 	<div class="h-screen flex">
 		<div class="text-white m-auto text-center sm:w-2/3 md:1/3 p-2" id="about_me">
 			<div class="object-container mx-auto">
-				<img class="" src="~static/images/myFace.jpeg">
+				<img class="" alt="My goddamned face" src="~static/images/myFace.jpeg">
 			</div>
 			<h1 class="text-center text-2xl">Who am I?</h1>
 			<p class="text-left">
