@@ -11,7 +11,6 @@
   "generate": "nuxt generate"
  },
  "dependencies": {
-  "@bazzite/nuxt-optimized-images": "^0.2.2",
   "@nuxtjs/pwa": "^2.6.0",
   "axios": "^0.19.0",
   "gsap": "^2.1.3",
@@ -20,6 +19,9 @@
   "nuxt": "^2.10.2"
  },
  "devDependencies": {
+  "@bazzite/nuxt-optimized-images": "^0.2.2",
+  "imagemin-mozjpeg": "^8.0.0",
+  "imagemin-pngquant": "^8.0.0",
   "mini-css-extract-plugin": "^0.8.0",
   "nodemon": "^1.19.4",
   "nuxt-purgecss": "^0.2.1",
