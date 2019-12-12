@@ -42,8 +42,45 @@ export default {
 		'nuxt-purgecss',
 		'@bazzite/nuxt-optimized-images',
 	],
+	purgeCSS:{
+		mode: 'postcss',
+		enabled: 'true', // or `false` when in dev/debug mode
+		paths: [
+			'components/**/*.vue',
+			'layouts/**/*.vue',
+			'pages/**/*.vue',
+			'plugins/**/*.js'
+		],
+		styleExtensions: ['.css'],
+		whitelist: ['body', 'html', 'nuxt-progress'],
+		extractors: [
+			{
+				extractor: class {
+					static extract(content) {
+						return content.match(/[A-z0-9-:\\/]+/g)
+					}
+				},
+				extensions: ['html', 'vue', 'js']
+			}
+		]
+	},
 	optimizedImages: {
-		optimizeImages: true
+		inlineImageLimit: -1,
+		handleImages: ['jpeg', 'png', 'svg', 'webp', 'gif'],
+		optimizeImages: true,
+		optimizeImagesInDev: false,
+		defaultImageLoader: 'img-loader',
+		mozjpeg: {
+			quality: 85
+		},
+		optipng: false,
+		pngquant: {
+			speed: 7,
+			quality: [0.65, 0.8]
+		},
+		webp: {
+			quality: 85
+		}
 	},
 	/*
 	** Build configuration
