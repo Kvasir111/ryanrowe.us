@@ -2,19 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.nav-header {
-	font-family: 'Universal Ignorance', sans-serif;
-	@apply font-bold text-2xl text-white;
-}
-
-.job-text {
-	@apply text-left;
-}
-
-.resume-heading {
-	@apply text-center border-b-2 w-1/4 mx-auto
-}
-
 .universal-ignorance{
 	font-family: "Universal Ignorance", sans-serif;
 }

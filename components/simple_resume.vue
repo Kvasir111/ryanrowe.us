@@ -1,12 +1,11 @@
 <template>
-	<div>
+	<div class="w-1/3 mx-auto">
 		<div class="text-center text-white" id="basic-information">
-
 			<h2 class="text-xl universal-ignorance">{{myTitle}}</h2>
 		</div>
 		<div class="text-white mx-auto mt-2" id="job-experience">
 			<h1 class="resume-heading"> Job Experience </h1>
-			<ul class="mx-auto w-1/4 text-center">
+			<ul class="mx-auto text-center">
 				<li :key="index" class="job-text" v-bind:value="jobs.years" v-for="(jobs, index) in jobs"><u>{{jobs.years}}</u>
 					<br> {{jobs.company}} {{jobs.job}}
 				</li>
@@ -14,16 +13,17 @@
 		</div>
 		<div class="text-white mx-auto mt-2" id="education">
 			<h1 class="resume-heading">Education</h1>
-			<ul class="mx-auto w-1/4 text-center">
+			<ul class="mx-auto text-center">
 				<li :key="index" :value="education.institution" class="job-text"
 				    v-for="(education , index) in education">
-					{{education.institution}} <br>{{education.degree}}
+					<p class="underline">{{education.institution}}</p>
+					<p>{{education.degree}}</p>
 				</li>
 			</ul>
 		</div>
 		<div class="text-white mx-auto mt-2" id="skills">
 			<h1 class="resume-heading">Skills</h1>
-			<ul class="mx-auto w-1/4 text-center">
+			<ul class="mx-auto text-center">
 				<li :key="index" :value="skills" class="job-text" v-for="(skills, index) in skills">{{skills.skill}}
 				</li>
 			</ul>
@@ -62,5 +62,12 @@
 </script>
 
 <style scoped>
+	.job-text {
+		@apply text-left;
+	}
+
+	.resume-heading {
+		@apply text-center border-b-2 mx-auto
+	}
 
 </style>

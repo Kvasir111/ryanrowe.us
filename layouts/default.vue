@@ -3,11 +3,11 @@
 		<div>
 			<label for="openButton" class="hidden">Open Navigation Menu</label>
 			<button class="top" id="openButton" v-on:click="openNav">
-				<right-arrow class="top"/>
+				<right-arrow v-bind:color="openArrowColor" class="top"/>
 			</button>
 			<div class="navMenu inline-block h-screen" id="sideNavigation">
 				<label for="closeButton" class="hidden"></label>
-				<button v-on:click="closeNav" id="closeButton"><left-arrow class="closeButton"/></button>
+				<button v-on:click="closeNav" id="closeButton"><left-arrow v-bind:color="openArrowColor" class="closeButton"/></button>
 				<ul>
 					<li v-on:click="closeNav"><nuxt-link class="navButton text-white hover:bg-gray-300 hover:text-black" to="/">Home</nuxt-link></li>
 					<li :key="i" v-for="(page, i) in pages" v-on:click="closeNav"><nuxt-link class="navButton text-white hover:bg-gray-300 hover:text-black" :to=pages[i]>{{pages[i]}}</nuxt-link></li>
@@ -25,6 +25,7 @@
 		data: function () {
 			return {
 				pages: ['Bio', 'Resume', 'Projects', 'Contact'],
+				openArrowColor: '#b71c1c'
 
 			}
 		},
