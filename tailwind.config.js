@@ -15,5 +15,7 @@ module.exports = {
 			},
 		}
 	},
-	variants: {}
+	variants: {
+		objectFit: ['responsive', 'hover', 'focus'],
+	}
 }

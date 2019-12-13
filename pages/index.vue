@@ -1,7 +1,7 @@
 <template>
 	<div>
-		<div class="">
-			<img id="background" alt="The Big man himself" class="" :src=this.mobileBackgroundImage>
+		<div class="h-screen flex overflow-hidden">
+			<img class="m-auto object-cover h-screen w-auto md:h-auto md:w-screen" alt="The Big Man" v-bind:src="backgroundImage">
 		</div>
 	</div>
 </template>
@@ -14,7 +14,7 @@
 		data: function () {
 			return{
 				backgroundImage : require('../static/images/sadman.jpg'),
-				mobileBackgroundImage: require('../static/images/mobileBackground.jpg')
+				mobileBackgroundImage: require('../static/images/mobileBackground.webp')
 			}
 		},
 		mounted() {
@@ -26,12 +26,5 @@
 </script>
 
 <style scoped>
-	@responsive {
-		.fullscreen {
-			@apply h-screen w-full overflow-hidden justify-center
-		}
-	}
-	html{
-		height: 100%;
-	}
+
 </style>
