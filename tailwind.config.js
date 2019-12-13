@@ -2,6 +2,10 @@
 module.exports = {
 	theme: {
 		extend: {
+			fontsize:{
+				'7xl': '5rem',
+				'8xl': '6rem',
+			},
 			fontFamily:{
 
 			},
@@ -17,5 +21,6 @@ module.exports = {
 	},
 	variants: {
 		objectFit: ['responsive', 'hover', 'focus'],
+		shadow: ['responsive', 'hover', 'focus'],
 	}
 }
