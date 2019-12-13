@@ -1,4 +1,4 @@
-{
+npm :{
  "name": "ryanrowe.us",
  "version": "2.0.0",
  "description": "Part time programmer, full time weirdo",
@@ -11,9 +11,8 @@
   "generate": "nuxt generate"
  },
  "dependencies": {
-  "@nuxtjs/pwa": "^2.6.0",
+  "@nuxtjs/pwa": "3.0.0-beta.19",
   "axios": "^0.19.0",
-  "gsap": "^2.1.3",
   "imagemin-webp": "^5.1.0",
   "jquery": "^3.4.1",
   "nuxt": "^2.10.2"
@@ -23,7 +22,7 @@
   "imagemin-mozjpeg": "^8.0.0",
   "imagemin-pngquant": "^8.0.0",
   "mini-css-extract-plugin": "^0.8.0",
-  "nodemon": "^1.19.4",
+  "nodemon": "2.0.2",
   "nuxt-purgecss": "^0.2.1",
   "purgecss-webpack-plugin": "^1.6.0",
   "serialize-javascript": "^2.1.2",
