@@ -21,6 +21,8 @@
 	import RightArrow from "../components/icons/rightArrow";
 	import LeftArrow from "../components/icons/leftArrow";
 	export default {
+
+
 		components: {LeftArrow, RightArrow},
 		data: function () {
 			return {
@@ -42,6 +44,13 @@
 	}
 </script>
 <style>
+	page-enter-active, .page-leave-active {
+		transition: all .50s ease-out;
+	}
+	.page-enter, .page-leave-active {
+		opacity: 0;
+		transform-origin: 50% 50%;
+	}
 	.top{
 		z-index: 1;
 		position: fixed;
