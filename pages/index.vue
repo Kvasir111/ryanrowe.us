@@ -1,6 +1,8 @@
 <template>
-	<div class="md:fullscreen">
-	<img  alt="bg" class="h-screen w-screen overflow-hidden justify-center lg:h-auto" src="~static/images/sadman.jpg">
+	<div>
+		<div class="h-screen w-auto object-cover overflow-hidden">
+			<img alt="The Big man himself" class="fill-current" :src=this.backgroundImage>
+		</div>
 	</div>
 </template>
 
@@ -11,6 +13,7 @@
 		},
 		data: function () {
 			return{
+				backgroundImage : require('../static/images/sadman.jpg')
 			}
 		},
 		mounted() {
@@ -24,7 +27,7 @@
 <style scoped>
 	@responsive {
 		.fullscreen {
-			@apply h-screen overflow-hidden justify-center w-full
+			@apply h-screen w-full overflow-hidden justify-center
 		}
 	}
 	html{
