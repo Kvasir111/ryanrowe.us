@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div class="project-box m-2 sm:zoom">
-		<a v-bind:href="repoLink">
+		<a v-bind:href="repoLink" target="_blank">
 			<h1 class="project-title">{{repoName}}</h1>
 			<h2 class="project-description italic">{{repoLang}}</h2>
 			<h3 class="project-description">{{repoDescription}}</h3>
