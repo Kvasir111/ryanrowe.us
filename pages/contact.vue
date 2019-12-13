@@ -26,7 +26,7 @@
 
 <style scoped>
 	a{
-		@apply inline-block
+		@apply inline-block p-2
 	}
 
 </style>
