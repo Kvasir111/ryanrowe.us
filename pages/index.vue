@@ -1,7 +1,7 @@
 <template>
 	<div>
-		<div class="h-screen w-auto object-cover overflow-hidden">
-			<img alt="The Big man himself" class="fill-current" :src=this.backgroundImage>
+		<div class="">
+			<img id="background" alt="The Big man himself" class="" :src=this.mobileBackgroundImage>
 		</div>
 	</div>
 </template>
@@ -13,7 +13,8 @@
 		},
 		data: function () {
 			return{
-				backgroundImage : require('../static/images/sadman.jpg')
+				backgroundImage : require('../static/images/sadman.jpg'),
+				mobileBackgroundImage: require('../static/images/mobileBackground.jpg')
 			}
 		},
 		mounted() {
