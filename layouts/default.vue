@@ -32,11 +32,11 @@
 		methods :{
 			openNav(){
 				document.getElementById("sideNavigation").style.width = "250px";
-				document.getElementById("openButton").style.display = "none";
+				document.getElementById("Open Nav Menu").style.display = "none";
 			},
 			closeNav(){
 				document.getElementById("sideNavigation").style.width = "0";
-				document.getElementById("openButton").style.display = "inline"
+				document.getElementById("Open Nav Menu").style.display = "inline"
 			}
 		}
 	}
