@@ -2,7 +2,7 @@
 	<div>
 		<div class="h-screen flex overflow-hidden">
 			<div class="absolute absoluteCenter onTop inline-block">
-				<span class="nameText pointer-events-none">{{name}}</span>
+				<span class="nameText pointer-events-none UniversalIgnorance">{{name}}</span>
 			</div>
 			<img class="onBottom m-auto object-cover h-screen w-auto md:h-auto md:w-screen" alt="The Big Man" v-bind:src="backgroundImage">
 		</div>
@@ -43,7 +43,6 @@
 	.nameText{
 		@apply text-6xl;
 		color: #b71c1c;
-		font-family: "Universal Ignorance", monospace
 	}
 
 </style>
