@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 @font-face{ 
-	font-family: 'Universal Ignorance';
-	src: local('universal-ignorance-webfont.woff');
+	font-family: 'Universal-Ignorance';
+	src: url("~assets/fonts/universal-ignorance-webfont.woff");
+}
+
+.UniversalIgnorance{
+	font-family: "Universal-Ignorance", sans-serif;
 }
