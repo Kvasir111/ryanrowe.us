@@ -30,6 +30,7 @@
 </script>
 
 <style scoped>
+
 	.onBottom{
 		z-index: -1;
 	}
@@ -43,7 +44,7 @@
 	.nameText{
 		@apply text-6xl;
 		color: #b71c1c;
-		font-family: "Universal Ignorance", sans-serif;
+		font-family: "Universal Ignorance"
 	}
 
 </style>
