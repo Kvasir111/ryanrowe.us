@@ -17,8 +17,7 @@
 		data: function () {
 			return{
 				name: 'RYAN ROWE',
-				backgroundImage : require('../static/images/sadman.jpg'),
-				mobileBackgroundImage: require('../static/images/mobileBackground.webp')
+				backgroundImage : require('../static/images/sadman.webp'),
 			}
 		},
 		mounted() {
@@ -44,7 +43,7 @@
 	.nameText{
 		@apply text-6xl;
 		color: #b71c1c;
-		font-family: "Universal Ignorance"
+		font-family: "Universal Ignorance", monospace
 	}
 
 </style>

@@ -1,10 +1,10 @@
+@tailwind base;
 
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@tailwind components;
 
+@tailwind utilities;
 
 @font-face{ 
 	font-family: 'Universal Ignorance';
-	src: require('universal-ignorance-webfont.woff') format('woff'),
+	src: local('universal-ignorance-webfont.woff');
 }
