@@ -17,7 +17,7 @@
 		data: function () {
 			return{
 				name: 'RYAN ROWE',
-				backgroundImage : require('../static/images/sadman.webp'),
+				backgroundImage : require('../assets/images/sadman.webp'),
 			}
 		},
 		mounted() {
