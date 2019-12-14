@@ -1,6 +1,9 @@
 // See default config https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
 module.exports = {
 	theme: {
+		fontFamily:{
+			universalIgnorance : ['Universal Ignorance', 'sans-serif'],
+		},
 		extend: {
 			fontsize:{
 				'7xl': '5rem',
