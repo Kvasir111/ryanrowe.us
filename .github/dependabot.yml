@@ -1,6 +1,6 @@
 version: 2
 updates:
-  # Fetch and update latest `npm` packages
+# Fetch and update latest `npm` packages
   - package-ecosystem: npm
     directory: '/'
     schedule:
