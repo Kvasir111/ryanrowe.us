@@ -1,13 +1,18 @@
 <template>
-  <div>
+  <div id="Job History">
     <h1 class="text-3xl">Job History</h1>
     <div v-for="(job, index) in jobs">
       <h1 class="text-2xl">{{ job.title }}</h1>
       <h2 class="text-xl inline">{{ job.company }}</h2>
       <h3 class="inline ">( {{ job.years }} )</h3>
     </div>
-
-    <div>
+    <div id="skills">
+      <h1 class="text-3xl">Skills / Experience </h1>
+      <ul class="text-left">
+        <li v-for="(skill, index) in skills">• {{ skill }}</li>
+      </ul>
+    </div>
+    <div id="Resume Download">
       <a target="_blank" v-bind:href="resumeLink">Download Resume</a>
     </div>
   </div>
@@ -28,7 +33,25 @@ export default {
           title: 'Technical Support Staff / Web Developer'
         },
         {company: 'Geek Squad', years: '2020-2021', title: 'Apple Repair Technician'},
-      ]
+      ],
+      skills: [
+        'Docker',
+        'HTML5/CSS/JS',
+        'Nuxt/Vue.js',
+        'Cisco Networking',
+        'Linux Server Management',
+        'Windows Troubleshooting',
+        'Full Stack Development',
+        'C Programming',
+        'Python Programming',
+        'Perl Programming',
+        'C# Programming',
+        'Java Programming',
+        'Wordpress CMS',
+        'SQL Scripting / SQL Server Management',
+        'Google Cloud Functions / Google Firebase Hosting'
+
+      ],
     }
   }
 }
