@@ -89,3 +89,5 @@ sw.*
 # Vim swap files
 *.swp
 /assets/scheme.png
+/.editorconfig
+/package-lock.json
