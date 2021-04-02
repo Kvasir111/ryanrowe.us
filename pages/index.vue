@@ -6,13 +6,16 @@
       </a>
     </nav>
     <section id="section1" class="fwh-slide">
-      <name class="w-full bg-white text-center"></name>
+      <name class="bg-red-500 mx-auto my-auto max-w-3xl text-center"></name>
     </section>
     <section id="section2" class="fwh-slide">
-      <about class="bg-white"></about>
+      <about class="bg-yellow-300 mx-auto my-auto max-w-3xl text-center"></about>
     </section>
     <section id="section3" class="fwh-slide">
-      <resume class=" bg-red-300 text-center"></resume>
+      <resume class=" bg-red-300 mx-auto my-auto max-w-3xl text-center"></resume>
+    </section>
+    <section id="section4" class="fwh-slide">
+      <contact class=" bg-blue-300 mx-auto my-auto max-w-3xl text-center"></contact>
     </section>
   </div>
 </template>
@@ -26,6 +29,7 @@ export default {
         {text: 'Home', link: '#section1'},
         {text: 'About Me', link: '#section2'},
         {text: 'Resume', link: '#section3'},
+        {text: 'Contact', link: '#section4'},
       ]
     }
   }
@@ -38,6 +42,7 @@ body {
 }
 
 .fwh-slide {
+  @apply flex;
   height: 100vh;
   box-sizing: border-box;
 }

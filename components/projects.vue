@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h1 class="text-3xl">Hi, I'm Ryan <br> I do stuff with Computers💾</h1>
+
   </div>
 </template>
 
 <script>
 export default {
-  name: "name"
+  name: "projects"
 }
 </script>
 
