@@ -5,8 +5,11 @@
         {{ link.text }}
       </a>
     </nav>
+    <section id="section0" class="">
+      <ryan></ryan>
+    </section>
     <section id="section1" class="fwh-slide">
-      <name class="bg-red-500 mx-auto my-auto max-w-3xl text-center"></name>
+      <name class="mx-auto my-auto max-w-3xl text-center"></name>
     </section>
     <section id="section2" class="fwh-slide">
       <about class="bg-yellow-300 mx-auto my-auto max-w-3xl text-center"></about>
@@ -45,5 +48,9 @@ body {
   @apply flex;
   height: 100vh;
   box-sizing: border-box;
+}
+
+#section1 {
+  font-family: "Hacked CRT", "sans-serif";
 }
 </style>
