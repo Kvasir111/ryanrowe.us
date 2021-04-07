@@ -5,9 +5,6 @@
         {{ link.text }}
       </a>
     </nav>
-    <section id="section0" class="">
-      <ryan></ryan>
-    </section>
     <section id="section1" class="fwh-slide">
       <name class="mx-auto my-auto max-w-3xl text-center"></name>
     </section>
@@ -52,5 +49,6 @@ body {
 
 #section1 {
   font-family: "Hacked CRT", "sans-serif";
+  background-image: url("~assets/images/ascii.png");
 }
 </style>

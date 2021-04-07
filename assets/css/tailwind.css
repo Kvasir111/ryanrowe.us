@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@font-face {
+  font-family: 'Hacked CRT';
+  src: url('~assets/fonts/Hacked-CRT.eot');
+  src: local('Hacked CRT Regular'), local('Hacked-CRT'),
+  url('~assets/fonts/Hacked-CRT.eot?#iefix') format('embedded-opentype'),
+  url('~assets/fonts/Hacked-CRT.woff2') format('woff2'),
+  url('~assets/fonts/Hacked-CRT.woff') format('woff'),
+  url('~assets/fonts/Hacked-CRT.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind utilities;
