@@ -46,11 +46,21 @@ body {
   position: relative;
 }
 
-.fwh-slide {
-  @apply flex;
-  height: 100vh;
-  box-sizing: border-box;
+@media handheld {
+  .fwh-slide {
+    @apply flex;
+    height: 100%;
+  }
 }
+
+@media screen {
+  .fwh-slide {
+    @apply flex;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+}
+
 
 #section1 {
   font-family: "Hacked CRT", "sans-serif";
