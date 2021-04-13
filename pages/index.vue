@@ -1,6 +1,6 @@
 <template>
   <div id="container" class="">
-    <nav class="fixed text-white">
+    <nav class="text-white">
       <a v-for="(link, index) in links" class="p-2" v-bind:href="link.link">
         {{ link.text }}
       </a>
@@ -25,6 +25,7 @@ export default {
   name: 'index',
   data: function () {
     return {
+      image: 'https://svgshare.com/i/WAC.svg',
       links: [
         {text: 'Home', link: '#section1'},
         {text: 'About Me', link: '#section2'},
@@ -41,6 +42,10 @@ body {
   margin: 0;
 }
 
+.wrapper {
+  position: relative;
+}
+
 .fwh-slide {
   @apply flex;
   height: 100vh;
@@ -49,6 +54,14 @@ body {
 
 #section1 {
   font-family: "Hacked CRT", "sans-serif";
-  background-image: url("~assets/images/ascii.png");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://svgshare.com/i/WBM.svg");
 }
+
+nav {
+  font-family: "Fake Receipt", sans-serif;
+}
+
 </style>

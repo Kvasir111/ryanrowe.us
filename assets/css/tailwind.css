@@ -13,4 +13,17 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Fake Receipt';
+  src: url("~assets/fonts/FakeReceipt-Regular.ttf");
+  src: local('FakeReceipt-Regular'),
+  url('~assets/fonts/FakeReceipt-Regular.woff2') format('woff2'),
+  url('~assets/fonts/FakeReceipt-Regular.woff') format('woff'),
+  url('~assets/fonts/FakeReceipt-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 @tailwind utilities;
