@@ -9,7 +9,7 @@
       <name class="mx-auto my-auto max-w-3xl text-center"></name>
     </section>
     <section id="section2" class="fwh-slide">
-      <about class="bg-yellow-300 mx-auto my-auto max-w-3xl text-center"></about>
+      <about class="mx-auto my-auto max-w-3xl"></about>
     </section>
     <section id="section3" class="fwh-slide">
       <resume class=" bg-red-300 mx-auto my-auto max-w-3xl text-center"></resume>

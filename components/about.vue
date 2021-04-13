@@ -3,12 +3,13 @@
     <h1 class="text-xl">Hello there!</h1>
     <p>
       My name is Ryan! <br>
-      Now, you are probably hoping this section will contain some sort of useful title like "Hello my name is Ryan Rowe,
-      I am a Java Engineer" or "Hello, yes, I am a .NET developer", but those one line titles I don't think really do a
-      great job at giving anyone an accurate picture of who somebody is. Instead I'm hoping this portfolio will give you
+      Now, you're probably hoping this section will contain some sort of useful title like "Hello my name is Ryan Rowe,
+      I am a Java Engineer" or "Hello, yes, I am a .NET developer", however, those one line titles don't really do a
+      great job at giving anyone an accurate picture of who somebody is. Instead I'm hoping this little ramble will give
+      you
       an overview of what I've done, what my interests are, and what I hope the future holds for me!
     </p>
-    <h2 class="text-xl">My Story</h2>
+    <h1 class="text-xl">My Story</h1>
     <p>
       When I left high school and stepped out from the borders of safety of mandatory education, I had absolutely no
       idea what I wanted to do with my life. I knew I liked technology, and messing around on computers was fun, but
@@ -26,7 +27,7 @@
       I know how computers talk to each other. I have a nice bird’s eye view of the landscape of computer science, but
       the actual texture of the ground is still out of my reach. A degree is just your ticket to ride the air balloon
       over the peaks and valleys of the fields of science, your passion for one area is where you say goodbye to
-      academia and take a leap of faith out of the balloon, onto the harsh unforgiving earth below.
+      academia and take a leap of faith out of the balloon, onto the harsh unforgiving earth below. <br>
       All of that long winded, flowery metaphor is to say, is that over six years of higher education, multiple jobs,
       arguments with professors, and lectern thumping class speeches, I still have not found my place. And I have
       settled on that being OK. The fatalism of predestination isn’t what I want, and just because you didn’t find your
@@ -43,5 +44,13 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  font-family: "Fake Receipt", sans-serif;
+  color: #838375;
+}
 
+p {
+  font-family: "Liquid Crystal", sans-serif;
+  color: #8b8b91;
+}
 </style>
