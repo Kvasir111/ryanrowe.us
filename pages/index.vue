@@ -1,22 +1,22 @@
 <template>
   <div>
-    <nav class="text-white">
+    <nav id="navbar" class="text-white overflow-hidden">
       <a v-for="(link, index) in links" class="p-2" v-bind:href="link.link">
         {{ link.text }}
       </a>
     </nav>
-    <div class="flex-container">
-      <section id="section1" class="flex h-screen w-screen">
-        <name class="p-2 m-auto "></name>
+    <div id="flexbox-container" class="content">
+      <section id="section1" class="flex h-90">
+        <name class="p-2 max-w-3xl m-auto text-center"></name>
       </section>
-      <section id="section2" class="flex h-screen align-middle justify-center bg-blue-700 ">
-        <about class="p-2  max-w-3xl m-auto"></about>
+      <section id="section2" class="">
+        <about class="p-2 max-w-3xl m-auto"></about>
       </section>
-      <section id="section3" class="flex h-screen align-middle justify-center">
-        <resume class="p-2 m-auto"></resume>
+      <section id="section3" class="">
+        <resume class="p-2 max-w-3xl m-auto"></resume>
       </section>
-      <section id="section4" class="flex h-screen align-middle justify-center">
-        <contact class="p-2 m-auto"></contact>
+      <section id="section4" class="">
+        <contact class="p-2 max-w-3xl m-auto"></contact>
       </section>
     </div>
   </div>
@@ -36,6 +36,18 @@ export default {
       ],
     }
   },
+  updated() {
+    window.onscroll = function () {
+      let nav = document.getElementById('navbar');
+      let sticky = nav.offsetTop;
+      if (window.pageYOffset >= sticky) {
+        nav.classList.add('sticky')
+      } else {
+        nav.classList.remove('sticky');
+      }
+    };
+  },
+  methods: {}
 }
 </script>
 
@@ -44,6 +56,16 @@ body {
   margin: 0;
 }
 
+#flexbox-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: stretch;
+}
+
+section {
+  @apply h-screen flex mt-2
+}
 
 #section1 {
   font-family: "Hacked CRT", "sans-serif";
@@ -51,17 +73,28 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("https://svgshare.com/i/WBM.svg");
+  z-index: -100;
 }
 
 nav {
   font-family: "Fake Receipt", sans-serif;
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+nav a {
+  float: left;
+  display: block;
+  padding: 14px;
+  text-decoration: none;
+  z-index: 100;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
 </style>
