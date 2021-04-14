@@ -5,7 +5,7 @@
       If you're looking to hire ya boi, please contact me though my email, or though linkedin! <br>
       Below I have provided some links to my social media, feel free to use them!
     </p>
-    <ul>
+    <ul class="text-center">
       <li><a v-bind:href="email">Email</a></li>
       <li><a target="_blank" v-bind:href="linkedin">Linkedin</a></li>
       <li><a target="_blank" v-bind:href="github">Github</a></li>
@@ -27,5 +27,20 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  font-family: "Fake Receipt", sans-serif;
+  color: #838375;
+}
+
+p {
+  font-family: "Liquid Crystal", sans-serif;
+  color: #8b8b91;
+}
+
+a {
+  @apply text-2xl;
+  font-family: "Liquid Crystal", sans-serif;
+  color: #f44268;
+}
 
 </style>

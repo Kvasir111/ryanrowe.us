@@ -6,17 +6,17 @@
       </a>
     </nav>
     <div class="flex-container">
-      <section id="section1" class="flex h-screen">
+      <section id="section1" class="flex h-screen w-screen">
         <name class="p-2 m-auto "></name>
       </section>
-      <section id="section2" class="flex h-screen">
-        <about class="p-2 mx-auto"></about>
+      <section id="section2" class="flex h-screen align-middle justify-center bg-blue-700 ">
+        <about class="p-2  max-w-3xl m-auto"></about>
       </section>
-      <section id="section3" class="flex h-screen">
-        <resume class="p-2 mx-auto"></resume>
+      <section id="section3" class="flex h-screen align-middle justify-center">
+        <resume class="p-2 m-auto"></resume>
       </section>
-      <section id="section4" class="flex h-screen">
-        <contact class="p-2"></contact>
+      <section id="section4" class="flex h-screen align-middle justify-center">
+        <contact class="p-2 m-auto"></contact>
       </section>
     </div>
   </div>
