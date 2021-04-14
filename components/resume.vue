@@ -7,13 +7,22 @@
       <h3 class="inline ">( {{ job.years }} )</h3>
     </div>
     <div id="skills">
-      <h1 class="text-3xl">Skills / Experience </h1>
+      <h1 class="text-3xl">Skills / Experience</h1>
+      <h1>Programming Languages</h1>
       <ul class="text-left">
-        <li v-for="(skill, index) in skills">• {{ skill }}</li>
+        <li v-for="(skill, index) in programmingSkills">• {{ skill }}</li>
+      </ul>
+      <h1>Web Development Skills</h1>
+      <ul>
+        <li v-for="(skill, index) in webSkills">• {{ skill }}</li>
+      </ul>
+      <h1>IT Skills</h1>
+      <ul>
+        <li v-for="(skill, index) in itSkills">• {{ skill }}</li>
       </ul>
     </div>
     <div id="Resume Download">
-      <a target="_blank" v-bind:href="resumeLink">Download Resume</a>
+      <a class="text-2xl" target="_blank" v-bind:href="resumeLink">Download Resume</a>
     </div>
   </div>
 </template>
@@ -34,29 +43,56 @@ export default {
         },
         {company: 'Geek Squad', years: '2020-2021', title: 'Apple Repair Technician'},
       ],
-      skills: [
-        'Docker',
-        'HTML5/CSS/JS',
-        'Nuxt/Vue.js',
-        'Cisco Networking',
-        'Linux Server Management',
-        'Windows Troubleshooting',
-        'Full Stack Development',
+      programmingSkills: [
         'C Programming',
         'Python Programming',
         'Perl Programming',
         'C# Programming',
         'Java Programming',
-        'Wordpress CMS',
-        'SQL Scripting / SQL Server Management',
-        'Google Cloud Functions / Google Firebase Hosting'
-
       ],
+      webSkills: [
+        'Google Cloud Functions / Google Firebase Hosting',
+        'Wordpress CMS',
+        'Docker',
+        'HTML5/CSS/JS',
+        'Nuxt/Vue.js',
+      ],
+      itSkills: [
+        'Full Stack Development',
+        'SQL Scripting / SQL Server Management',
+        'Cisco Networking',
+        'Linux Server Management',
+        'Windows Troubleshooting',
+      ],
+
     }
   }
 }
 </script>
 
 <style scoped>
+h1 {
+  color: #838375;
+  font-family: "Fake Receipt", sans-serif;
+}
 
+h2 {
+  color: #838375;
+  font-family: "Fake Receipt", sans-serif;
+}
+
+h3 {
+  color: #838375;
+  font-family: "Fake Receipt", sans-serif;
+}
+
+li {
+  color: #8b8b91;
+  font-family: "Liquid Crystal", sans-serif;
+}
+
+a {
+  color: #f44268;
+  font-family: "Liquid Crystal", sans-serif;
+}
 </style>

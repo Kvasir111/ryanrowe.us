@@ -1,22 +1,24 @@
 <template>
-  <div id="container" class="">
+  <div>
     <nav class="text-white">
       <a v-for="(link, index) in links" class="p-2" v-bind:href="link.link">
         {{ link.text }}
       </a>
     </nav>
-    <section id="section1" class="fwh-slide">
-      <name class="mx-auto my-auto max-w-3xl text-center"></name>
-    </section>
-    <section id="section2" class="fwh-slide">
-      <about class="mx-auto my-auto max-w-3xl"></about>
-    </section>
-    <section id="section3" class="fwh-slide">
-      <resume class=" bg-red-300 mx-auto my-auto max-w-3xl text-center"></resume>
-    </section>
-    <section id="section4" class="fwh-slide">
-      <contact class=" bg-blue-300 mx-auto my-auto max-w-3xl text-center"></contact>
-    </section>
+    <div class="flex-container">
+      <section id="section1" class="flex h-screen">
+        <name class="p-2 m-auto "></name>
+      </section>
+      <section id="section2" class="flex h-screen">
+        <about class="p-2 mx-auto"></about>
+      </section>
+      <section id="section3" class="flex h-screen">
+        <resume class="p-2 mx-auto"></resume>
+      </section>
+      <section id="section4" class="flex h-screen">
+        <contact class="p-2"></contact>
+      </section>
+    </div>
   </div>
 </template>
 
@@ -31,34 +33,15 @@ export default {
         {text: 'About Me', link: '#section2'},
         {text: 'Resume', link: '#section3'},
         {text: 'Contact', link: '#section4'},
-      ]
+      ],
     }
-  }
+  },
 }
 </script>
 
 <style>
 body {
   margin: 0;
-}
-
-.wrapper {
-  position: relative;
-}
-
-@media handheld {
-  .fwh-slide {
-    @apply flex;
-    height: 100%;
-  }
-}
-
-@media screen {
-  .fwh-slide {
-    @apply flex;
-    height: 100vh;
-    box-sizing: border-box;
-  }
 }
 
 
@@ -72,6 +55,13 @@ body {
 
 nav {
   font-family: "Fake Receipt", sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 </style>
