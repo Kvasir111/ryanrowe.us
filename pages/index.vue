@@ -39,6 +39,7 @@ export default {
   updated() {
     window.onscroll = function () {
       let nav = document.getElementById('navbar');
+      console.log("moved")
       let sticky = nav.offsetTop;
       if (window.pageYOffset >= sticky) {
         nav.classList.add('sticky')
