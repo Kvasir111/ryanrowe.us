@@ -1,12 +1,12 @@
 <template>
   <div>
-    <nav id="navbar" class="text-white overflow-hidden">
+    <nav id="navbar" class="text-white overflow-hidden sticky">
       <a v-for="(link, index) in links" class="p-2" v-bind:href="link.link">
         {{ link.text }}
       </a>
     </nav>
     <div id="flexbox-container" class="content">
-      <section id="section1" class="flex h-90">
+      <section id="section1" class="">
         <name class="p-2 max-w-3xl m-auto text-center"></name>
       </section>
       <section id="section2" class="">
@@ -36,18 +36,6 @@ export default {
       ],
     }
   },
-  updated() {
-    window.onscroll = function () {
-      let nav = document.getElementById('navbar');
-      console.log("moved")
-      let sticky = nav.offsetTop;
-      if (window.pageYOffset >= sticky) {
-        nav.classList.add('sticky')
-      } else {
-        nav.classList.remove('sticky');
-      }
-    };
-  },
   methods: {}
 }
 </script>
@@ -65,7 +53,9 @@ body {
 }
 
 section {
-  @apply h-screen flex mt-2
+  @apply flex mt-2;
+  height: 100%;
+  width: 100%;
 }
 
 #section1 {
@@ -75,6 +65,7 @@ section {
   background-size: cover;
   background-image: url("https://svgshare.com/i/WBM.svg");
   z-index: -100;
+  height: 100vh;
 }
 
 nav {
