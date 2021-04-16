@@ -27,7 +27,7 @@ export default {
   name: 'index',
   data: function () {
     return {
-      image: 'https://svgshare.com/i/WAC.svg',
+      image: 'https://raw.githubusercontent.com/Kvasir111/ryanrowe.us/new/assets/images/ascii.svg',
       links: [
         {text: 'Home', link: '#section1'},
         {text: 'About Me', link: '#section2'},
