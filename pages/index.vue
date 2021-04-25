@@ -6,7 +6,7 @@
       </a>
     </nav>
     <div id="flexbox-container" class="content">
-      <section id="section1" class="md:h-screen h-full md:mt-0 md:mb-0 mt-4 mb-4">
+      <section id="section1" class="md:h-screen h-full md:mt-0 md:mb-0 mt-0 mb-4">
         <name class="p-2 max-w-3xl m-auto text-center"></name>
       </section>
       <section id="section2" class="md:h-screen h-full md:mt-0 md:mb-0 mt-4 mb-4">

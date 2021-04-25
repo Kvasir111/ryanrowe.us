@@ -10,18 +10,18 @@
       <h1 class="text-3xl">Skills / Experience</h1>
       <h1>Programming Languages</h1>
       <ul class="text-left">
-        <li v-for="(skill, index) in programmingSkills">• {{ skill }}</li>
+        <li v-for="(skill, index) in programmingSkills">» {{ skill }}</li>
       </ul>
       <h1>Web Development Skills</h1>
       <ul>
-        <li v-for="(skill, index) in webSkills">• {{ skill }}</li>
+        <li v-for="(skill, index) in webSkills">» {{ skill }}</li>
       </ul>
       <h1>IT Skills</h1>
       <ul>
-        <li v-for="(skill, index) in itSkills">• {{ skill }}</li>
+        <li v-for="(skill, index) in itSkills">» {{ skill }}</li>
       </ul>
     </div>
-    <div id="Resume Download">
+    <div id="Resume Download" class="text-center">
       <a class="text-2xl" target="_blank" v-bind:href="resumeLink">Download Resume</a>
     </div>
   </div>
