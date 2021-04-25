@@ -1,10 +1,10 @@
 <template>
-  <div id="Job History">
+  <div id="Job History" class="">
     <h1 class="text-3xl">Job History</h1>
     <div v-for="(job, index) in jobs">
       <h1 class="text-2xl">{{ job.title }}</h1>
       <h2 class="text-xl inline">{{ job.company }}</h2>
-      <h3 class="inline ">( {{ job.years }} )</h3>
+      <h3 class="text-right">( {{ job.years }} )</h3>
     </div>
     <div id="skills">
       <h1 class="text-3xl">Skills / Experience</h1>
@@ -82,7 +82,7 @@ h2 {
 }
 
 h3 {
-  color: #838375;
+  color: #8b8b91;
   font-family: "Fake Receipt", sans-serif;
 }
 

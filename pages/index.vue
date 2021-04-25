@@ -1,21 +1,21 @@
 <template>
   <div>
-    <nav id="navbar" class="text-white overflow-hidden sticky md:bg-transparent bg-black">
-      <a v-for="(link, index) in links" class="p-2" v-bind:href="link.link">
+    <nav id="navbar" class="text-white overflow-hidden sticky bg-black md:bg-transparent">
+      <a v-for="(link, index) in links" class="p-2 mr-2 ml-2" v-bind:href="link.link">
         {{ link.text }}
       </a>
     </nav>
     <div id="flexbox-container" class="content">
-      <section id="section1" class="md:h-screen h-full">
+      <section id="section1" class="md:h-screen h-full md:mt-0 md:mb-0 mt-4 mb-4">
         <name class="p-2 max-w-3xl m-auto text-center"></name>
       </section>
-      <section id="section2" class="md:h-screen h-full">
+      <section id="section2" class="md:h-screen h-full md:mt-0 md:mb-0 mt-4 mb-4">
         <about class="p-2 max-w-3xl m-auto"></about>
       </section>
-      <section id="section3" class="md:h-screen h-full">
+      <section id="section3" class="md:h-screen h-full md:mt-0 md:mb-0 mt-4 mb-4">
         <resume class="p-2 max-w-3xl m-auto"></resume>
       </section>
-      <section id="section4" class="md:h-screen h-full">
+      <section id="section4" class="md:h-screen h-full md:mt-0 md:mb-0 mt-4 mb-4">
         <contact class="p-2 max-w-3xl m-auto"></contact>
       </section>
     </div>
